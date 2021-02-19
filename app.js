@@ -7,7 +7,7 @@ app.use(cors());
 
 // Get animal array
 app.get('/animal', (req, res) => {
-res.json({ animal });
+res.json({ results: animal });
 });
 
 // get one animal out of array
@@ -15,7 +15,7 @@ app.get('/animal/:id', (req, res) => {
   const id = Number(req.params.id);
   const oneAnimal = animal.find((a) => a.id === id);
 
-  res.json({ oneAnimal });
+  res.json({ results: oneAnimal });
 });
 
 module.exports = {
