@@ -17,7 +17,7 @@ it('should respond with the whole animal array',
         done();
     });
 
-  // return one animal from animal array
+  // return one animal from animal array test
     it('should respond with one animal from array', 
     async(done) => {
         const expectation = {
